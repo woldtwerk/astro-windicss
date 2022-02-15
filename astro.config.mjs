@@ -15,5 +15,8 @@ export default {
   },
   vite: {
     plugins: [WindiCSS()]
-  }
+  },
+  renderers: [
+    "@astrojs/renderer-vue"
+  ],
 };

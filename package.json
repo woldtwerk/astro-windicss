@@ -9,6 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/renderer-vue": "^0.3.0",
     "astro": "^0.22.20",
     "vite": "^2.8.3",
     "vite-plugin-windicss": "^1.7.0",
