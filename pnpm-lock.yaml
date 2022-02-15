@@ -1,12 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@astrojs/renderer-vue': ^0.3.0
   astro: ^0.22.20
   vite: ^2.8.3
   vite-plugin-windicss: ^1.7.0
   windicss: ^3.4.3
 
 devDependencies:
+  '@astrojs/renderer-vue': 0.3.0_vite@2.8.3
   astro: 0.22.20
   vite: 2.8.3
   vite-plugin-windicss: 1.7.0_vite@2.8.3
@@ -133,6 +135,16 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0}
     dependencies:
       '@vitejs/plugin-vue': 1.10.2_vite@2.6.14
+      vue: 3.2.31
+    transitivePeerDependencies:
+      - vite
+    dev: true
+
+  /@astrojs/renderer-vue/0.3.0_vite@2.8.3:
+    resolution: {integrity: sha512-XV/WLhG76ORXFcYnjbYS8Xa7TJpOzK/eOe55XsbVPlONmg0Cyx/a20Es9KBAolelgmBlIOAJAtDBZ1Dn5rQOjA==}
+    engines: {node: ^14.15.0 || >=16.0.0}
+    dependencies:
+      '@vitejs/plugin-vue': 1.10.2_vite@2.8.3
       vue: 3.2.31
     transitivePeerDependencies:
       - vite
@@ -608,6 +620,15 @@ packages:
       vite: ^2.5.10
     dependencies:
       vite: 2.6.14_sass@1.49.7
+    dev: true
+
+  /@vitejs/plugin-vue/1.10.2_vite@2.8.3:
+    resolution: {integrity: sha512-/QJ0Z9qfhAFtKRY+r57ziY4BSbGUTGsPRMpB/Ron3QPwBZM4OZAZHdTa4a8PafCwU5DTatXG8TMDoP8z+oDqJw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      vite: ^2.5.10
+    dependencies:
+      vite: 2.8.3
     dev: true
 
   /@vue/compiler-core/3.2.31:
