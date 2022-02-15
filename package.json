@@ -14,5 +14,8 @@
     "vite": "^2.8.3",
     "vite-plugin-windicss": "^1.7.0",
     "windicss": "^3.4.3"
+  },
+  "dependencies": {
+    "vue": "^3.2.31"
   }
 }
