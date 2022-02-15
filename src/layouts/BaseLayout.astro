@@ -1,0 +1,42 @@
+---
+// import windi from  'virtual:windi.css'
+
+// const styles = `<style>${windi}</style>`
+
+// import '../windicss.ts'
+
+// src/layouts/BaseLayout.astro
+const {title} = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <style global>
+      @import "../styles/global.css";
+      @import "../styles/home.css";
+    </style>
+
+    <script type="module" src={Astro.resolve('../windicss.ts')}></script>
+
+    <!-- {styles} -->
+
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-width: min(100%, 68ch);
+      }
+    </style>
+    <!-- windicss -->
+  </head>
+  <body>
+    <!-- asd{styles} -->
+    <slot />
+  </body>
+</html>
