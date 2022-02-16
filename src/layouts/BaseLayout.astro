@@ -1,9 +1,4 @@
 ---
-// import windi from  'virtual:windi.css'
-
-// const styles = `<style>${windi}</style>`
-
-// import '../windicss.ts'
 
 // src/layouts/BaseLayout.astro
 const {title} = Astro.props;
@@ -23,8 +18,6 @@ const {title} = Astro.props;
 
     <script type="module" src={Astro.resolve('../windicss.ts')}></script>
 
-    <!-- {styles} -->
-
     <style>
       header {
         display: flex;
@@ -33,10 +26,8 @@ const {title} = Astro.props;
         max-width: min(100%, 68ch);
       }
     </style>
-    <!-- windicss -->
   </head>
   <body>
-    <!-- asd{styles} -->
     <slot />
   </body>
 </html>
